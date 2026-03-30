@@ -1,22 +1,22 @@
-// sw.js - Service Worker para RservasRoma
+// sw.js - Service Worker para KamiBorges.nails
 
-const CACHE_NAME = 'rservasroma-v1';
+const CACHE_NAME = 'kamiborgesnails-v1';
 const urlsToCache = [
-  '/rservasroma/',
-  '/rservasroma/index.html',
-  '/rservasroma/admin.html',
-  '/rservasroma/admin-login.html',
-  '/rservasroma/setup-wizard.html',
-  '/rservasroma/editar-negocio.html',
-  '/rservasroma/manifest.json',
-  '/rservasroma/icons/icon-72x72.png',
-  '/rservasroma/icons/icon-96x96.png',
-  '/rservasroma/icons/icon-128x128.png',
-  '/rservasroma/icons/icon-144x144.png',
-  '/rservasroma/icons/icon-152x152.png',
-  '/rservasroma/icons/icon-192x192.png',
-  '/rservasroma/icons/icon-384x384.png',
-  '/rservasroma/icons/icon-512x512.png'
+  '/kamiborgesnails/',
+  '/kamiborgesnails/index.html',
+  '/kamiborgesnails/admin.html',
+  '/kamiborgesnails/admin-login.html',
+  '/kamiborgesnails/setup-wizard.html',
+  '/kamiborgesnails/editar-negocio.html',
+  '/kamiborgesnails/manifest.json',
+  '/kamiborgesnails/icons/icon-72x72.png',
+  '/kamiborgesnails/icons/icon-96x96.png',
+  '/kamiborgesnails/icons/icon-128x128.png',
+  '/kamiborgesnails/icons/icon-144x144.png',
+  '/kamiborgesnails/icons/icon-152x152.png',
+  '/kamiborgesnails/icons/icon-192x192.png',
+  '/kamiborgesnails/icons/icon-384x384.png',
+  '/kamiborgesnails/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/rservasroma/icons/icon-192x192.png');
+            return caches.match('/kamiborgesnails/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para RservasRoma');
+console.log('✅ Service Worker configurado para KamiBorges.nails');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);
