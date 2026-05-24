@@ -1,6 +1,6 @@
 // sw.js - Service Worker para KamiBorges.nails
 
-const CACHE_NAME = 'kamiborgesnails-v25';
+const CACHE_NAME = 'kamiborgesnails-v29';
 const urlsToCache = [
   '/kamiborgesnails/',
   '/kamiborgesnails/index.html',
