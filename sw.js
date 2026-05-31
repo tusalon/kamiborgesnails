@@ -1,6 +1,6 @@
 // sw.js - Service Worker para KamiBorges.nails
 
-const CACHE_NAME = 'kamiborgesnails-v29';
+const CACHE_NAME = 'kamiborgesnails-v47';
 const urlsToCache = [
   '/kamiborgesnails/',
   '/kamiborgesnails/index.html',
@@ -17,7 +17,14 @@ const urlsToCache = [
   '/kamiborgesnails/icons/icon-152x152.png',
   '/kamiborgesnails/icons/icon-192x192.png',
   '/kamiborgesnails/icons/icon-384x384.png',
-  '/kamiborgesnails/icons/icon-512x512.png'
+  '/kamiborgesnails/icons/icon-512x512.png',
+  '/kamiborgesnails/vendor/react.production.min.js',
+  '/kamiborgesnails/vendor/react-dom.production.min.js',
+  '/kamiborgesnails/vendor/babel.min.js',
+  '/kamiborgesnails/vendor/bcrypt.min.js',
+  '/kamiborgesnails/vendor/tailwind-browser.js',
+  '/kamiborgesnails/vendor/lucide/lucide.css',
+  '/kamiborgesnails/vendor/lucide/lucide.woff2'
 ];
 
 // ============================================
